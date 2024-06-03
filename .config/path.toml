@@ -1,0 +1,19 @@
+[Linux]
+/home/aritmos/.cargo/bin
+/home/aritmos/bin
+/usr/local/sbin
+/usr/local/bin
+/usr/sbin
+/usr/bin
+/sbin
+/bin
+/usr/games
+/usr/local/games
+/usr/lib/wsl/lib
+/usr/bin/site_perl
+/usr/bin/vendor_perl
+/usr/bin/core_perl
+
+[Windows]
+# forgot why we want this, but im pretty sure its needed
+/mnt/d/Programs/Neovim/bin
