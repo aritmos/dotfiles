@@ -1,0 +1,46 @@
+add_newline = false
+
+format = """
+$directory $fill $cmd_duration$python${custom.zig}$rust$git_metrics$git_branch\  
+$line_break\
+$character"""
+# right_format = '$cmd_duration $python $rust $line_break'
+
+[fill]
+symbol = ' '
+
+[cmd_duration]
+format = "[$duration](bold grey) "
+
+[git_metrics]
+disabled = false
+added_style = "bold blue"
+# format = '\([+$added]($added_style)/[-$deleted]($deleted_style)\) '
+
+[git_branch]
+symbol = ' '
+
+[python]
+format = "[$symbol($version)](bold green) "
+version_format = "v${minor}"
+
+[custom.zig]
+detect_extensions = ["zig"]
+command = '''zig version | sd '^\d\.(\d+)\.\d-dev\.(\d+)\+.*$' 'v$1 ($2)'
+'''
+format = "[⚡️ $output](bold yellow) "
+
+# [zig]
+# symbol = "⚡️ "
+# # commands = ['zig version | sd "^\d.(\d+).\d+-dev.(\d+).*$" "v$1 ($2)" ']
+# version_format="v${minor} (${patch})"
+# format = "[$symbol v$version ()](bold yellow) "
+
+[rust]
+# symbol = " "
+format = '[$symbol($version) \($toolchain\)](bold red) '
+version_format = "v${minor}"
+
+[character] 
+success_symbol = '[>](bold green)'
+error_symbol = '[>](bold red)'
