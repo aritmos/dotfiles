@@ -1,43 +1,21 @@
-# ⚙️ ~/.config/nvim
+# ~/.config/nvim
 
-My neovim configuration files
-
-## 🔑 Key Points
-- `neovim@0.9.4`
-- 100% `.lua`
-- Plugin Manager: [`folke/lazy.nvim`](https://www.github.com/folke/lazy.nvim) (auto bootstrap)
-- Set up for **Rust**, **Python**, **Go**, and **Zig**
-- Supports Linux, Windows, and MacOS
-- Packed with all the standard IDE goodies one expects along with some opinionated addons and configurations:
+My neovim config.
+- Functional yet slim.
+- Managed by `lazy.nvim`.
+- Configured for `{.rs, .py, .lua, .go, .zig, .c, .cpp}`.
+- Featuring _Rosé Pine_ <3.
 
 ![](nvim.jpg)
 
 ## 🧩 Main Plugins
-### 💻 Code
-- [`nvim-treesitter/nvim-treesitter`](https://www.github.com/nvim-treesitter/nvim-treesitter)
-- [`hrsh7th/nvim-cmp`](https://www.github.com/hrsh7th/nvim-cmp)
-- [`kylechui/nvim-surround`](https://www.github.com/kylechui/nvim-surround)
-- [`vim-scripts/ReplaceWithRegister`](https://www.github.com/vim-scripts/ReplaceWithRegister)
-- [`windwp/nvim-autopairs`](https://www.github.com/windwp/nvim-autopairs)
-- [`echasnovski/mini.comment`](https://www.github.com/echasnovski/mini.comment)
-- [`mfussenegger/nvim-dap`](https://www.github.com/mfussenegger/nvim-dap)
-- [`ray-x/go.nvim`](https://www.github.com/ray-x/go.nvim)
-- [`simrat39/rust-tools.nvim`](https://www.github.com/simrat39/rust-tools.nvim)
-- [`Canop/nvim-bacon`](https://www.github.com/Canop/nvim-bacon)
-
-### 📃 Editing
-- [`nvim-tree/nvim-tree.lua`](https://www.github.com/nvim-tree/nvim-tree.lua)
-- [`stevearc/oil.nvim`](https://www.github.com/stevearc/oil.nvim)
-- [`nvim-telescope/telescope.nvim`](https://www.github.com/nvim-telescope/telescope.nvim)
-- [`ggandor/leap.nvim`](https://www.github.com/ggandor/leap.nvim)
-- [`ggandor/flit.nvim`](https://www.github.com/ggandor/flit.nvim)
-- [`thePrimeagen/harpoon`](https://www.github.com/thePrimeagen/harpoon)
-
-### LSP
-- [`williamboman/mason.nvim`](https://www.github.com/williamboman/mason.nvim)
-- [`neovim/nvim-lspconfig`](https://www.github.com/neovim/nvim-lspconfig)
-- [`nvimdev/lspsaga.nvim`](https://www.github.com/nvimdev/lspsaga.nvim)
-
-### UI
-- [`rose-pine/nvim`](https://www.github.com/rose-pine/nvim)
-- [`nvim-lualine/lualine.nvim`](https://www.github.com/nvim-lualine/lualine.nvim)
+### Code
+- Autocompletion: `hrsh7th/nvim-cmp`, `L3MONA4D3/LuaSnip`, `rafamadriz/friendly-snippets`.
+- QoL: `kylechui/nvim-surround`, `vim-scripts/ReplaceWithRegister`, `windwp/nvim-autopairs`, `echasnovski/mini.nvim`, `nvim-treesitter/nvim-treesitter-textobjects`.
+- Git: `lewis6991/gitsigns.nvim`.
+- LSP: `neovim/nvim-lspconfig`, `williamboman/mason`, `nvimdev/lspsaga.nvim`. 
+- Extra Lang Support: `ray-x/go.nvim`, `Canop/nvim-bacon`, `mrcjkb/rustaceanvim`.
+- Debugging: `mfussenegger/nvim-dap`.
+### Editor
+- Explorer: `nvim-tree/nvim-tree.lua`, `stevearc/oil.nvim`, `nvim-telescope/telescope.nvim`, `thePrimagen/harpoon`.
+- Movement: `ggandor/leap.nvim`, `ggandor/flit.nvim`.
