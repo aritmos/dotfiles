@@ -1,5 +1,7 @@
 [Linux]
 /home/aritmos/.cargo/bin
+/home/aritmos/.zvm/bin
+/home/aritmos/.zvm/self
 /home/aritmos/bin
 /usr/local/sbin
 /usr/local/bin
