@@ -47,6 +47,14 @@ return {
             require("mini.comment").setup({})
         end,
     },
+    {
+        "folke/todo-comments.nvim",
+        dependencies = { "nvim-lua/plenary.nvim" },
+        opts = {
+            signs = false,
+            keywords = { WARN = { icon = " ", color = "warning", alt = { "WARNING", "XXX", "SAFETY" } } },
+        },
+    },
     -- debugging
     {
         "mfussenegger/nvim-dap",
