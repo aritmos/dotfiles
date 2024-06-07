@@ -6,6 +6,8 @@ export ZSH_COMPDUMP="$HOME/.cache/zsh/.zcompdump"
 # $PATH is saved a newline separated list within the given file
 export PATH="$(rg '^/' ~/.config/path.toml | tr '\n' ':')"
 
+export EDITOR="nvim"
+
 export GOPATH="$HOME/dev/go"
 export GOBIN="$HOME/dev/bin"
 
@@ -15,7 +17,7 @@ source $ZSH/oh-my-zsh.sh
 # ALIASES -------------------------------------------------
 alias ls="eza"
 alias c="clear"
-alias zj="zellig"
+alias zj="zellij"
 alias lg="lazygit"
 alias py="python3"
 alias xdg-open="wsl-open"
