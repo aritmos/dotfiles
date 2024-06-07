@@ -6,4 +6,5 @@ git:
   #   externalDiffCommand: difft --color=always --display=inline
 keybinding:
   commits:
-    viewResetOptions: 't'
+    revertCommit: <c-v>
+    viewResetOptions: t
