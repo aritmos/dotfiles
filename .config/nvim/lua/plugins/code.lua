@@ -69,7 +69,7 @@ return {
             "nvim-neotest/nvim-nio",
         },
         config = function()
-            require("user.config.dapui")
+            require("user.config.dap")
         end,
         keys = require("user.config.keymaps").dap_ui,
     },
